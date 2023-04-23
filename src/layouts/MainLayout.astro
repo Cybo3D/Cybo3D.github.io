@@ -1,22 +1,14 @@
 ---
 const { title } = Astro.props
 import "../styles/global.css"
-
-
-import GitHub from '/Cybo3DLogo.svg';
-import Instagram from '/Cybo3DLogo.svg';
-import Itchio from '/Cybo3DLogo.svg';
-import Patreon from '/Cybo3DLogo.svg';
-import Tumblr from '/Cybo3DLogo.svg';
-import YouTube from '/Cybo3DLogo.svg';
-
-
 ---
 
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
     <link rel='icon' type='image/svg+xml' href='/Cybo3DLogo.svg' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
@@ -33,56 +25,21 @@ import YouTube from '/Cybo3DLogo.svg';
    
     <slot />
 
-    <footer>
-        <div class="container">
-          <div class="copyright">© 2023 aarthificial</div>
-          <div class="socials">
-            <a
-              class="social"
-              href="https://www.youtube.com/@aarthificial"
-              title="YouTube"
-              target="_blank"
-            >
-              <YouTube />
-            </a>
-            <a
-              class="social"
-              href="https://www.patreon.com/aarthificial"
-              title="Patreon"
-              target="_blank"
-            >
-              <Patreon />
-            </a>
-            <a class="social" href="https://github.com/aarthificial" title="GitHub">
-              <GitHub />
-            </a>
-            <a
-              class="social"
-              href="https://www.tumblr.com/aarthificial"
-              title="tumblr."
-              target="_blank"
-            >
-              <Tumblr />
-            </a>
-            <a
-              class="social"
-              href="https://www.instagram.com/aarthificial_"
-              title="Instagram"
-              target="_blank"
-            >
-              <Instagram />
-            </a>
-            <a
-              class="social"
-              href="https://aarthificial.itch.io/"
-              title="itch.io"
-              target="_blank"
-            >
-              <Itchio />
-            </a>
+    <div class="footer-dark">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col item social">
+                    <a href="#"><i class="icon ion-social-facebook"></i></a>
+                    <a href="#"><i class="icon ion-social-twitter"></i></a>
+                    <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                    <a href="#"><i class="icon ion-social-instagram"></i></a>
+                  </div>
+              </div>
+              <p class="copyright">© 2023 Cybo3D</p>
           </div>
-        </div>
       </footer>
+  </div>
 
   </body>
 </html>
