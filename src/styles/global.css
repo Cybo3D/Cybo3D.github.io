@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #FF5C00;
+    padding: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+a:hover {
+    color: #ff7f36;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+h1{
+    color: black;
+    padding: 20px;
+}
+p{
+    padding: 20px
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #6500E7;
+    padding: 10px;
+}  
+.LogoNavBar {
+    display: block;
+    margin: 0 auto;
+}
+
+.LogoFootBar {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: green;
+  }
+
+  .container {
+    max-width: 1056px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: var(--spacing);
+    gap: var(--spacing);
+  }
+
+  .copyright {
+    margin-right: auto;
+    flex-grow: 10000;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .social {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.1s;
+  }
+
+  .social:hover {
+    background-color: var(--background-color);
+  }

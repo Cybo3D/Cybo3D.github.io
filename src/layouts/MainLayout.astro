@@ -1,0 +1,88 @@
+---
+const { title } = Astro.props
+import "../styles/global.css"
+
+
+import GitHub from '/Cybo3DLogo.svg';
+import Instagram from '/Cybo3DLogo.svg';
+import Itchio from '/Cybo3DLogo.svg';
+import Patreon from '/Cybo3DLogo.svg';
+import Tumblr from '/Cybo3DLogo.svg';
+import YouTube from '/Cybo3DLogo.svg';
+
+
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/Cybo3DLogo.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <nav>
+        <img style="LogoNavBar" src='/Cybo3DLogo.svg' width="60" height="60"/>
+        <a href='/'>Home</a>
+        <a href='/about'>About</a>
+        <a href='/projects'>Projects</a>
+    </nav>
+
+    <h1>{title}</h1>
+   
+    <slot />
+
+    <footer>
+        <div class="container">
+          <div class="copyright">© 2023 aarthificial</div>
+          <div class="socials">
+            <a
+              class="social"
+              href="https://www.youtube.com/@aarthificial"
+              title="YouTube"
+              target="_blank"
+            >
+              <YouTube />
+            </a>
+            <a
+              class="social"
+              href="https://www.patreon.com/aarthificial"
+              title="Patreon"
+              target="_blank"
+            >
+              <Patreon />
+            </a>
+            <a class="social" href="https://github.com/aarthificial" title="GitHub">
+              <GitHub />
+            </a>
+            <a
+              class="social"
+              href="https://www.tumblr.com/aarthificial"
+              title="tumblr."
+              target="_blank"
+            >
+              <Tumblr />
+            </a>
+            <a
+              class="social"
+              href="https://www.instagram.com/aarthificial_"
+              title="Instagram"
+              target="_blank"
+            >
+              <Instagram />
+            </a>
+            <a
+              class="social"
+              href="https://aarthificial.itch.io/"
+              title="itch.io"
+              target="_blank"
+            >
+              <Itchio />
+            </a>
+          </div>
+        </div>
+      </footer>
+
+  </body>
+</html>
