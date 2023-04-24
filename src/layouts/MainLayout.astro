@@ -4,7 +4,6 @@ const { title } = Astro.props
 const { homeactive } = Astro.props
 const { aboutactive } = Astro.props
 const { projectsactive } = Astro.props
-const { contactactive } = Astro.props
 
 import "../styles/global.css"
 ---
@@ -26,7 +25,6 @@ import "../styles/global.css"
       <a class={homeactive} href="/">Home</a>
       <a class={aboutactive} href="/about">About</a>
       <a class={projectsactive} href="/projects">Projects</a>
-      <a class={contactactive} href="/contact">Contact</a>
     </div>
 
     <h1>{title}</h1>
@@ -44,8 +42,17 @@ import "../styles/global.css"
                     <a href="https://cybo3d.itch.io/"><i class="icon ion-ios-game-controller-b"></i></a>
                   </div>
               </div>
-              <p class="copyright">© 2023 Cybo3D</p>
           </div>
+
+          <div class="container">
+            <div class="row">
+                <div class="col item social">
+                  <p class="copyright">© 2023 Cybo3D</p>
+                  <p class="contact" style="text-align:center; padding-top:15px; padding-bottom: 0px; opacity:0.3; font-size:13px; margin-bottom:0; cursor: pointer;" onclick="window.location.href='/contact'">Contact</p>
+                </div>
+            </div>
+          </div>
+
       </footer>
   </div>
 
