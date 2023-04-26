@@ -3,15 +3,19 @@ export interface Props {
   title: string;
   about: string;
   imgsrc: string;
+  imglink: string;
 }
 const {title} = Astro.props;
 const {about} = Astro.props;
 const {imgsrc} = Astro.props;
+const {imglink} = Astro.props;
 import "../styles/global.css"
 ---
 
 <h2 class="title">{title}</h2>
-<img class='banner' src={imgsrc} width="492" height="277">
+<a href={imglink}>
+  <img class='banner' src={imgsrc} width="492" height="277">
+</a>
 <p class="about">{about}</p>
 
 <style>
