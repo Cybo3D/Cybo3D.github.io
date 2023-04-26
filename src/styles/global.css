@@ -20,13 +20,26 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
-h1, h2{
+h1{
     color: rgb(255, 255, 255);
     padding: 20px;
 }
+h2{
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
 p{
   color: rgb(175, 175, 175);
-    padding: 20px
+  padding: 20px
+}
+
+.about{
+  color: rgb(175, 175, 175);
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 /* Add a black background color to the top navigation */
