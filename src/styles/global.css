@@ -42,8 +42,8 @@ p{
   padding-bottom: 1px;
 }
 
-.banner{
-  border-radius: 16px; 
+.banner {
+  border-radius: 32px; 
   object-fit: scale-down; 
   max-width: 100%; 
   padding-left: 8px;
