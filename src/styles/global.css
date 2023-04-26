@@ -42,6 +42,15 @@ p{
   padding-bottom: 1px;
 }
 
+.banner{
+  border-radius: 16px; 
+  object-fit: scale-down; 
+  max-width: 100%; 
+  padding-left: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #2C394B;
