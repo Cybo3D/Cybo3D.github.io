@@ -38,7 +38,11 @@ h4,h6{
 }
 p{
   color: rgb(175, 175, 175);
-  padding: 20px
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: -20px; /* adjust the value as needed */
 }
 
 .about{
