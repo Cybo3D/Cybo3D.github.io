@@ -14,13 +14,25 @@ import "../styles/global.css"
 
 <h2 class="title">{title}</h2>
 <a href={imglink}>
-  <img class='banner' src={imgsrc} width="492" height="277">
+  <div class="banner-container">
+    <img class='banner' src={imgsrc} width="492" height="277">
+    <p class="about">{about}</p>
+  </div>
 </a>
-<p class="about">{about}</p>
 
 <style>
   .about {
     word-wrap: break-word;
     max-width: 500px; /* set the maximum width of the text */
+    float: left;
+    margin-left: 10px;
+  }
+  
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start; /* add this property to align items to the left */
+    padding-bottom: 20px;
   }
 </style>

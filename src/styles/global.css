@@ -59,6 +59,15 @@ p{
   padding-bottom: 1px;
 }
 
+@media only screen and (max-width: 600px) {
+  .banner {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #2C394B;
