@@ -13,12 +13,12 @@ import "../styles/global.css"
 ---
 
 <h2 class="title">{title}</h2>
-<a href={imglink}>
-  <div class="banner-container">
+<div class="banner-container">
+  <a href={imglink}>
     <img class='banner' src={imgsrc} width="492" height="277">
-    <p class="about">{about}</p>
-  </div>
-</a>
+  </a>
+  <p class="about">{about}</p>
+</div>
 
 <style>
   .about {
@@ -26,6 +26,10 @@ import "../styles/global.css"
     max-width: 520px; /* reduce max-width to make text narrower */
     float: left;
     font-size: 17px;
+
+    color: rgb(175, 175, 175);
+    padding-left: 20px;
+    padding-top: 1px;
   }
   
   .banner-container {
@@ -33,6 +37,27 @@ import "../styles/global.css"
     flex-direction: column;
     justify-content: flex-start; /* align items to the left */
     align-items: flex-start;
-    padding-bottom: 20px;
+  }
+
+  .title {
+
+  }
+  
+  .banner {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 16px; 
+    object-fit: scale-down; 
+    max-width: 100%; 
+    float: left;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .banner {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
   }
 </style>
